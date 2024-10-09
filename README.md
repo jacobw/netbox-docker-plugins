@@ -5,4 +5,11 @@ Netbox image with selected plugins.
 Included plugins:
 - netbox_prometheus_sd
 
-[ghcr.io/jacobw/netbox-docker-plugins:latest](ghcr.io/jacobw/netbox-docker-plugins:latest)
+Intended to use with [netbox-docker](https://github.com/netbox-community/netbox-docker)
+
+```yaml
+services:
+  netbox: netbox
+    image: ghcr.io/jacobw/netbox-docker-plugins:latest
+    ...
+```
