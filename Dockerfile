@@ -1,4 +1,4 @@
-FROM ghcr.io/netbox-community/netbox:v4.1.3
+FROM ghcr.io/netbox-community/netbox:v4.1.4
 
 COPY ./plugin_requirements.txt /opt/netbox/
 RUN /opt/netbox/venv/bin/pip install  --no-warn-script-location -r /opt/netbox/plugin_requirements.txt
